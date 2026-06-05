@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: finance-tracker-backend
+  namespace: default
+  labels:
+    app: finance-tracker-backend
+spec:
+  type: ClusterIP
+  selector:
+    app: finance-tracker-backend
+  ports:
+    - port: 80
+      targetPort: 8080
+      protocol: TCP

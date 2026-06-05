@@ -20,7 +20,7 @@ spec:
         - name: ghcr-secret
       containers:
         - name: backend
-          image: ghcr.io/trantheanh135/finance-tracker-backend:5ca58dd3df195043db7cc8dac7acaa69cf84fd84
+          image: ghcr.io/trantheanh135/finance-tracker-backend:8ba1ebd3bb49fa835f08539d2b51e50acf1289e8
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
